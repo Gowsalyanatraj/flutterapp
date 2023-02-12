@@ -24,11 +24,16 @@ class DooDee extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+                 CircleAvatar(
+                backgroundImage:ExactAssetImage('assets/dog.jpg'),
+                radius: 40.0,
+              ),
               Text(
                 "Name",
                 style: TextStyle(
-                  color: Color.fromARGB(206, 220, 189, 76),
+                  color: Color.fromARGB(206, 235, 235, 89),
                   letterSpacing: 2.0,
+                  fontSize: 20.0,
                 ) ,
                 ),
                 SizedBox(height: 10,),
@@ -37,7 +42,7 @@ class DooDee extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.amberAccent[200],
                   letterSpacing: 2.0,
-                  fontSize: 28.0,
+                  fontSize: 20.0,
                   fontWeight: FontWeight.bold
                 ) ,
                 ),
@@ -45,8 +50,9 @@ class DooDee extends StatelessWidget {
                 Text(
                 "age",
                 style: TextStyle(
-                  color: Color.fromARGB(206, 220, 189, 76),
+                  color: Color.fromARGB(206, 245, 216, 113),
                   letterSpacing: 2.0,
+                  fontSize: 20.0,
                 ) ,
                 ),
                 SizedBox(height: 10,),
@@ -55,10 +61,11 @@ class DooDee extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.amberAccent[200],
                   letterSpacing: 2.0,
-                  fontSize: 28.0,
+                  fontSize: 20.0,
                   fontWeight: FontWeight.bold
                 ) ,
                 ),
+                  SizedBox(height: 10,),
                 Row(
                   children: <Widget>[
                     Icon(
@@ -68,14 +75,15 @@ class DooDee extends StatelessWidget {
                       Text(
                         "tinntinn00@gmail.com",
                         style: TextStyle(
-                          color: Colors.blueGrey,
-                          fontSize: 18.0,
+                          color: Color.fromARGB(255, 214, 212, 77),
+                         fontSize: 20.0,
                           letterSpacing: 1.0,
                         ),
                       )
                   ]
                 ),
-          ]),
+          ],
+          ),
         ) ,
     );
   }
